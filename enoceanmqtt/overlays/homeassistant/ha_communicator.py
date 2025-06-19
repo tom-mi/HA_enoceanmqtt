@@ -47,7 +47,7 @@ class HACommunicator(Communicator):
                 cur_sensor['command'] = devcfg.get('command')
                 cur_sensor['channel'] = devcfg.get('channel')
                 cur_sensor['log_learn'] = devcfg.get('log_learn')
-                cur_sensor['direction'] = devcfg.get('direction')
+                cur_sensor['direction'] = devcfg.get('direction') or None
                 cur_sensor['answer'] = devcfg.get('answer')
 
                 # Better to work with JSON in HA so force JSON usage
